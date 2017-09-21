@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>AJAX YouTube API example</title> 
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+        <!-- <link href="index.css" rel="stylesheet" type="text/css" /> -->
+    </head>
+    <body>
+      <h1>Search Trails</h1>
+          <form action="#" name="trail-search" class="js-search-form">
+            <label for="query">Activity:</label>
+            <input type="text" name="activity" class="js-query">
+             <label for="query">City:</label>
+            <input type="text" name="city" class="js-query">
+             <label for="query">State:</label>
+            <input type="text" name="state" class="js-query">
+             <label for="query">Country:</label>
+            <input type="text" name="country" class="js-query">
+             <label for="query">Radius:</label>
+            <input type=number name="radius" class="js-query">
+            <button type="submit">Search</button>
+          </form>
+
+      <main role="main" class="output" aria-live="assertive">
+          <h2>Results</h2>
+          <div class="js-search-results">
+            
+          </div>
+      </main>
+      <script src="app.js"></script>
+    </body>
+</html>
