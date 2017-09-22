@@ -8,29 +8,38 @@
           src="https://code.jquery.com/jquery-3.2.1.min.js"
           integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
           crossorigin="anonymous"></script>
-        <!-- <link href="index.css" rel="stylesheet" type="text/css" /> -->
+          <link href="app.css" rel="stylesheet" type="text/css" />
+          <!-- Latest compiled and minified CSS -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+          <!-- Optional theme -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+          <!-- Latest compiled and minified JavaScript -->
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
     </head>
     <body>
-      <h1>Search Trails</h1>
+      <div class="container">
+       <div class="col-md-4">
+         <h1>Search Trails</h1>
           <form action="#" name="trail-search" class="js-search-form">
-            <label for="query">Activity:</label>
-            <input type="text" name="activity" class="js-query">
-             <label for="query">City:</label>
-            <input type="text" name="city" class="js-query">
-             <label for="query">State:</label>
-            <input type="text" name="state" class="js-query">
-             <label for="query">Country:</label>
-            <input type="text" name="country" class="js-query">
+            <label for="query"></label>
+            <input type="text" name="activity" class="js-activity" placeholder="Activity"><br>
+             <label for="query"></label>
+            <input type="text" name="city" class="js-city" placeholder="City"><br>
+             <label for="query"></label>
+            <input id="state" name="state" class="js-state" placeholder="State"><br>
              <label for="query">Radius:</label>
-            <input type=number name="radius" class="js-query">
+             <input type="range" id="myRange" value="100"><br>
             <button type="submit">Search</button>
           </form>
-
+      </div>
       <main role="main" class="output" aria-live="assertive">
+        <div class="col-md-8">
           <h2>Results</h2>
           <div class="js-search-results">
-            
           </div>
+        </div>  
       </main>
       <script src="app.js"></script>
     </body>
